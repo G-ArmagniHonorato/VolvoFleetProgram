@@ -1,0 +1,117 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #111111;
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+th, td {
+    padding: 16px;
+    text-align: left;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+th {
+    background: #1a1a1a;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+td {
+    color: #cccccc;
+    font-size: 14px;
+}
+
+tr:hover td {
+    background: #1a1a1a;
+    color: #ffffff;
+}
+
+td button {
+    background: transparent;
+    color: #ffffff;
+    border: 1px solid #333333;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: all 0.2s ease;
+}
+
+    td button:hover {
+        background: #2a2a2a;
+        border-color: #444444;
+    }
+.btn-primary {
+    background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+    color: #ffffff;
+    border: 1px solid #333333;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    letter-spacing: 0.3px;
+}
+
+    .btn-primary:hover {
+        background: linear-gradient(135deg, #2a2a2a, #3a3a3a);
+        border-color: #444444;
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+.btn-secondary {
+    background: transparent;
+    color: #999999;
+    border: 1px solid #444444;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+    .btn-secondary:hover {
+        background: #1a1a1a;
+        color: #cccccc;
+        border-color: #555555;
+    }

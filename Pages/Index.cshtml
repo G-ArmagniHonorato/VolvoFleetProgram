@@ -1,0 +1,85 @@
+﻿@page
+@model IndexModel
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="~/css/vehicles.css" />
+</head>
+<body>
+    <div class="vehicle-container">
+        <div class="vehicle-header">
+            <h1 class="vehicle-title">Teste tecnico</h1>
+        </div>
+
+        <div class="vehicle-actions">
+            <button class="btn-primary" onclick="loadVehicles()">Listar Veículos</button>
+            <button class="btn-primary" onclick="showCreateForm()">Adicionar Veículo</button>
+            <button class="btn-primary" onclick="showSearchForm()">Buscar por Chassis</button>
+        </div>
+
+        <div id="formContainer" class="form-container" style="display:none;">
+            <h3 id="formTitle"></h3>
+            <form id="vehicleForm">
+                <div class="form-group">
+                    <label for="chassisSeries">Chassis Series:</label>
+                    <input type="text" id="chassisSeries" required min="0"/>
+                </div>
+                <div class="form-group">
+                    <label for="chassisNumber">Chassis Number:</label>
+                    <input type="number" id="chassisNumber" required min="0" />
+                </div>
+                <div class="form-group">
+                    <label for="vehicleType">Tipo:</label>
+                    <select id="vehicleType" required>
+                        <option value="0">Car</option>
+                        <option value="1">Truck</option>
+                        <option value="2">Bus</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="color">Cor:</label>
+                    <input type="text" id="color" required />
+                </div>
+                <div class="form-buttons">
+                    <button type="button" class="btn-secondary" onclick="hideForm()">Cancelar</button>
+                    <button type="submit" class="btn-primary">Salvar</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="searchContainer" class="form-container" style="display:none;">
+            <h3>Buscar Veículo por Chassis</h3>
+            <form id="searchForm">
+                <div class="form-group">
+                    <label for="searchSeries">Chassis Series:</label>
+                    <input type="text" id="searchSeries" required />
+                </div>
+                <div class="form-group">
+                    <label for="searchNumber">Chassis Number:</label>
+                    <input type="number" id="searchNumber" required />
+                </div>
+                <div class="form-buttons">
+                    <button type="button" class="btn-secondary" onclick="hideSearch()">Cancelar</button>
+                    <button type="submit" class="btn-primary">Buscar</button>
+                </div>
+            </form>
+        </div>
+
+
+        <div id="vehicleList"></div>
+    </div>
+    <div id="errorModal" class="custom-modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h3>Erro</h3>
+            <p id="errorMessage"></p>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="~/js/vehicles.js"></script>
+</body>
+</html>
