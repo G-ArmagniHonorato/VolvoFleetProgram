@@ -12,3 +12,4 @@ Este projeto foi desenvolvido como parte da etapa de teste técnico da empresa *
 1. Faça o download ou clone este repositório
 2. Abra o projeto em uma IDE com suporte a .NET 7 (ex Visual Studio 2022)
 3. Execute o projeto
+

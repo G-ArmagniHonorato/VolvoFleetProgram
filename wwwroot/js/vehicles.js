@@ -24,7 +24,7 @@ function loadVehicles() {
                 html += `<tr>
                     <td>${v.chassisId.chassisSeries}-${v.chassisId.chassisNumber}</td>
                     <td>${v.type}</td>
-                    <td>${v.numberOfPassengers}</td>
+                    <td>${v.numberPassengers}</td>
                     <td>${v.color}</td>
                     <td>
                         <button onclick="showEditForm('${v.chassisId.chassisSeries}', ${v.chassisId.chassisNumber})">Editar Cor</button>
@@ -156,7 +156,7 @@ function searchVehicle() {
             html += `<tr>
                 <td>${vehicle.chassisId.chassisSeries}-${vehicle.chassisId.chassisNumber}</td>
                 <td>${vehicle.type}</td>
-                <td>${vehicle.numberOfPassengers}</td>
+                <td>${vehicle.numberPassengers}</td>
                 <td>${vehicle.color}</td>
                 <td>
                     <button onclick="showEditForm('${vehicle.chassisId.chassisSeries}', ${vehicle.chassisId.chassisNumber})">Editar Cor</button>
