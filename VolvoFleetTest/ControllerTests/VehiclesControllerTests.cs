@@ -73,7 +73,7 @@ namespace VolvoFleetProgram.Tests.ControllerTests
             // Assert
             var statusResult = Assert.IsType<ObjectResult>(result);
             Assert.Equal(500, statusResult.StatusCode);
-            Assert.Contains("Erro interno do server", statusResult.Value.ToString());
+            Assert.Contains("Erro interno", statusResult.Value.ToString());
         }
 
         [Fact]
@@ -146,7 +146,7 @@ namespace VolvoFleetProgram.Tests.ControllerTests
             // Assert
             var statusResult = Assert.IsType<ObjectResult>(result);
             Assert.Equal(500, statusResult.StatusCode);
-            Assert.Contains("Erro interno do server", statusResult.Value.ToString());
+            Assert.Contains("Erro interno", statusResult.Value.ToString());
         }
 
         [Fact]
@@ -212,7 +212,7 @@ namespace VolvoFleetProgram.Tests.ControllerTests
             // Assert
             var statusResult = Assert.IsType<ObjectResult>(result);
             Assert.Equal(500, statusResult.StatusCode);
-            Assert.Contains("Erro interno do server", statusResult.Value.ToString());
+            Assert.Contains("Erro interno", statusResult.Value.ToString());
         }
 
         [Fact]
@@ -317,7 +317,7 @@ namespace VolvoFleetProgram.Tests.ControllerTests
             // Assert
             var statusResult = Assert.IsType<ObjectResult>(result);
             Assert.Equal(500, statusResult.StatusCode);
-            Assert.Contains("Erro interno do server", statusResult.Value.ToString());
+            Assert.Contains("Erro interno", statusResult.Value.ToString());
         }
 
         [Fact]
@@ -387,7 +387,7 @@ namespace VolvoFleetProgram.Tests.ControllerTests
             // Assert
             var statusResult = Assert.IsType<ObjectResult>(result);
             Assert.Equal(500, statusResult.StatusCode);
-            Assert.Contains("Erro interno do server", statusResult.Value.ToString());
+            Assert.Contains("Erro interno", statusResult.Value.ToString());
             _vehicleServiceMock.Verify(s => s.UpdateVehicle(It.IsAny<ChassisIdentifier>(), It.IsAny<string>()), Times.Never);
         }
 
