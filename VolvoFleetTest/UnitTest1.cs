@@ -1,4 +1,4 @@
-namespace VolvoFleet.UnitTests
+namespace VolvoFleetTest
 {
     public class UnitTest1
     {
