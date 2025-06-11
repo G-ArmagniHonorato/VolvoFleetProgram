@@ -2,12 +2,12 @@
 
 Este projeto foi desenvolvido como parte da etapa de teste técnico da empresa **Ewave**.
 
-## ✅ Tecnologias
+## Tecnologias
 
 - .NET 7.0
 - Razor Pages (Web Application)
 
-## 🚀 Como executar
+## Como executar
 
 1. Faça o download ou clone este repositório
 2. Abra o projeto em uma IDE com suporte a .NET 7 (ex Visual Studio 2022)
